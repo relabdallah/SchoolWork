@@ -1,0 +1,60 @@
+#Ramzi El-abdallah
+#Lab 10
+
+
+.data
+
+newline: .asciiz "\n"
+input: .space 10
+encrypt: .space 10
+decrypt: .space 10
+
+
+.text
+
+main:
+	la $s1, encrypt			#load address of encrypt into $s1
+	la $s2, input
+	la $s3, decrypt
+	li $s0, 10			#count 1
+	li $s4, 10			#count 2
+	li $s5, 10			#encrypt
+
+	li $v0,8
+	la $a0, input
+	li $a1, 10
+	syscall
+
+	li $v0, 4
+	la $a0, newline
+	syscall
+
+
+
+loop:
+	beq $s0, $0, loop2
+	lb $t0, 0($s2)
+	xor $t1, $t0, $s5
+	sb $t1, 0($s1)
+	li $t0, 0
+	li $t1, 0
+	addi $s2, $s2, 1
+	addi $s1, $s1, 1
+	sub $s0, $s0, 1
+	j loop
+
+
+loop2:
+	beq $s4, $0, exit
+	
+	
+
+
+
+
+
+
+
+exit:
+	li $v0, 10
+	syscall

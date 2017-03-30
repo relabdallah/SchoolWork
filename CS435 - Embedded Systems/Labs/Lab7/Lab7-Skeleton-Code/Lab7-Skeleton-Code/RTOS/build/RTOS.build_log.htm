@@ -1,0 +1,209 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ramzi El-abdallah, CSUSM, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      UL2CM3.DLL V1.158.5.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+C:\Users\Ramzi\Google Drive\Fall 2016\CS435 - Embedded Systems\Labs\Lab7\Lab7-Skeleton-Code\Lab7-Skeleton-Code\RTOS\RTOS.uvproj
+Project File Date:  11/30/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'mbed NUCLEO_F401RE'
+compiling rt_Task.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_Task.c: 4 warnings, 0 errors
+compiling rt_System.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_System.c(228): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&os_psq->count);
+mbed-rtos/rtx/rt_System.c(228): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&os_psq->count);
+mbed-rtos/rtx/rt_System.c: 6 warnings, 0 errors
+compiling rt_List.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_List.c: 4 warnings, 0 errors
+compiling rt_Time.c...
+compiling rt_Semaphore.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_Semaphore.c: 4 warnings, 0 errors
+compiling rt_Mailbox.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_Mailbox.c(112): warning:  #3731-D: intrinsic is deprecated
+      
+t_inc (&p_MCB->count);
+mbed-rtos/rtx/rt_Mailbox.c(112): warning:  #3731-D: intrinsic is deprecated
+      
+t_inc (&p_MCB->count);
+mbed-rtos/rtx/rt_Mailbox.c(151): warning:  #3731-D: intrinsic is deprecated
+        
+t_dec (&p_MCB->count);
+mbed-rtos/rtx/rt_Mailbox.c(151): warning:  #3731-D: intrinsic is deprecated
+        
+t_dec (&p_MCB->count);
+mbed-rtos/rtx/rt_Mailbox.c(214): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&p_MCB->count);
+mbed-rtos/rtx/rt_Mailbox.c(214): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&p_MCB->count);
+mbed-rtos/rtx/rt_Mailbox.c(253): warning:  #3731-D: intrinsic is deprecated
+        
+t_inc (&p_CB->count);
+mbed-rtos/rtx/rt_Mailbox.c(253): warning:  #3731-D: intrinsic is deprecated
+        
+t_inc (&p_CB->count);
+mbed-rtos/rtx/rt_Mailbox.c(278): warning:  #3731-D: intrinsic is deprecated
+          
+t_inc (&p_CB->count);
+mbed-rtos/rtx/rt_Mailbox.c(278): warning:  #3731-D: intrinsic is deprecated
+          
+t_inc (&p_CB->count);
+mbed-rtos/rtx/rt_Mailbox.c: 14 warnings, 0 errors
+compiling rt_CMSIS.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_CMSIS.c: 4 warnings, 0 errors
+compiling HAL_CM.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/HAL_CM.c: 4 warnings, 0 errors
+compiling rt_Robin.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_Robin.c: 4 warnings, 0 errors
+compiling rt_MemBox.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_MemBox.c(108): warning:  #3731-D: intrinsic is deprecated
+      if ((free = (void **)__ldrex(&((P_BM) box_mem)->free)) == 0) {
+mbed-rtos/rtx/rt_MemBox.c(112): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex((U32)*free, &((P_BM) box_mem)->free));
+mbed-rtos/rtx/rt_MemBox.c(157): warning:  #3731-D: intrinsic is deprecated
+      *((void **)box) = (void *)__ldrex(&((P_BM) box_mem)->free);
+mbed-rtos/rtx/rt_MemBox.c(158): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex ((U32)box, &((P_BM) box_mem)->free));
+mbed-rtos/rtx/rt_MemBox.c: 8 warnings, 0 errors
+compiling RTX_Conf_CM.c...
+compiling rt_Event.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_Event.c: 4 warnings, 0 errors
+compiling rt_Mutex.c...
+mbed-rtos/rtx/rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+mbed-rtos/rtx/rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+mbed-rtos/rtx/rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+mbed-rtos/rtx/rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos/rtx/rt_Mutex.c: 4 warnings, 0 errors
+compiling Thread.cpp...
+compiling RtosTimer.cpp...
+compiling Semaphore.cpp...
+compiling Mutex.cpp...
+compiling DS1631.cpp...
+compiling main.cpp...
+compiling HAL_CM4.c...
+.\mbed-rtos\rtx\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+.\mbed-rtos\rtx\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+.\mbed-rtos\rtx\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+.\mbed-rtos\rtx\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+mbed-rtos\rtx\TARGET_M4\TOOLCHAIN_ARM\HAL_CM4.c: 4 warnings, 0 errors
+assembling SVC_Table.s...
+linking...
+Program Size: Code=24996 RO-data=1536 RW-data=248 ZI-data=2876  
+".\build\RTOS.axf" - 0 Error(s), 64 Warning(s).
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>

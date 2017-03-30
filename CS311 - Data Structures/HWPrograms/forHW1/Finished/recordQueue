@@ -1,0 +1,22 @@
+Script started on Fri 12 Feb 2016 12:51:27 AM PST
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ g++ queueu[K.cpp client2.cpp
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ ./a.out
+[A, B, C, AA, AB, AC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, ]
+[A, B, C, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, CA, CB, CC, AA, AB, AC, BA, BB, BC, ]
+ERROR: The queue has overflowed
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ exit
+exit
+
+Script done on Fri 12 Feb 2016 12:52:01 AM PST

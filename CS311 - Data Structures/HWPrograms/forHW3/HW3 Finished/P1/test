@@ -1,0 +1,120 @@
+Script started on Thu 10 Mar 2016 09:04:52 PM PST
+]0;elabd004@empress:~/HWPrograms/forHW3/P1[elabd004@empress P1]$ g++ llist.cpp HW3P1client.cpp 
+]0;elabd004@empress:~/HWPrograms/forHW3/P1[elabd004@empress P1]$ ./a.out
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>1
+CASE 1:------------------- 
+1
+List is Empty
+2
+[empty]
+3
+4
+[1][2][3][4]
+5
+1 has been removed from the list.
+2 has been removed from the list.
+6
+[3][4]
+7
+List is not Empty
+8
+4 has been removed from the list.
+3 has been removed from the list.
+9
+List is Empty
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>2
+Case 2: -----------------------
+1:
+2:
+3:
+4 has been removed
+4:
+5:
+[5][6][8][9]
+6:
+7:
+8:
+9:
+ERROR: Index is out of range.
+10:
+ERROR: Index is out of range.
+11:
+[4][5][6][7][8][9][10]
+12:
+4 has been removed.
+13:
+10 has been removed.
+14:
+7
+6
+7 has been removed.
+15:
+ERROR: Index is out of range.
+16:
+ERROR: Index is out of range.
+17:
+[5][6][8][9]
+18:
+9 has been removed.
+8 has been removed.
+6 has been removed.
+5 has been removed.
+19:
+[empty]
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>3
+Case 3:-------------------- 
+1
+ERROR: Index is out of range.
+2
+ERROR: List is already empty
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>4
+Case 4:------------------------ 
+1
+ERROR: Index is out of range.
+2
+ERROR: List is already empty
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>0
+]0;elabd004@empress:~/HWPrograms/forHW3/P1[elabd004@empress P1]$ exit
+exit
+
+Script done on Thu 10 Mar 2016 09:05:39 PM PST

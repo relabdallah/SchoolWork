@@ -1,0 +1,60 @@
+Script started on Tue May 10 15:46:15 2016
+[?1034hbash-3.2$ logout./a.outg++ stack.cpp slist.cpp llist.cpp dgraph.cpp hw7Client2.cpp
+bash-3.2$ g++ stack.cpp slist.cpp llist.cpp dgraph.cpp hw7Client2.cpp[C[C[C[C[C[C[C[C[C[Clogout[K./a.out
+*Now filling table*
+Displaying table before DFS
+A	2	[B][F]
+B	2	[C][G]
+C	1	[H]
+D	0	[empty]
+E	0	[empty]
+F	2	[I][E]
+G	0	[empty]
+H	2	[G][I]
+I	3	[A][G][E]
+
+Beginning DFS with A
+ - Element A has been visited already.
+
+Displaying graph verticies and their visit number:
+bash-3.2$ ./a.out
+*Now filling table*
+Displaying table before DFS
+A	2	[B][F]
+B	2	[C][G]
+C	1	[H]
+D	0	[empty]
+E	0	[empty]
+F	2	[I][E]
+G	0	[empty]
+H	2	[G][I]
+I	3	[A][G][E]
+
+Beginning DFS with A
+ - Element A has been visited already.
+
+Displaying graph verticies and their visit number:
+bash-3.2$ clear
+[H[2Jbash-3.2$ clear./a.outg++ stack.cpp slist.cpp llist.cpp dgraph.cpp hw7Client2.cpp
+bash-3.2$ g++ stack.cpp slist.cpp llist.cpp dgraph.cpp hw7Client2.cpp[C[C[C[C[C[C[C[C[C[Cclear[K./a.out
+*Now filling table*
+Displaying table before DFS
+A	2	[B][F]
+B	2	[C][G]
+C	1	[H]
+D	0	[empty]
+E	0	[empty]
+F	2	[I][E]
+G	0	[empty]
+H	2	[G][I]
+I	3	[A][G][E]
+
+Beginning DFS with A
+ - Element A has been visited already.
+
+Displaying graph verticies and their visit number:
+Goodbye
+bash-3.2$ exit
+exit
+
+Script done on Tue May 10 15:49:20 2016

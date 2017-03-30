@@ -1,0 +1,55 @@
+Script started on Mon 22 Feb 2016 08:47:30 PM PST
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ g++ Binsearch.cpp
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ ./a.out
+What number are you looking for?
+1
+Checking in slot 5
+Checking in slot 2
+Checking in slot 1
+Your number was found in position 1
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ ./a.out
+What number are you looking for?
+19
+Checking in slot 5
+Checking in slot 8
+Checking in slot 9
+Checking in slot 10
+Your number was found in position 10
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ ./a.out
+What number are you looking for?
+5
+Checking in slot 5
+Checking in slot 2
+Checking in slot 3
+Your number was found in position 3
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ ./a.out
+What number are you looking for?
+17
+Checking in slot 5
+Checking in slot 8
+Checking in slot 9
+Your number was found in position 9
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ ./a.out
+What number are you looking for?
+21
+Checking in slot 5
+Checking in slot 8
+Checking in slot 9
+Your number was not found.
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ ./a.out
+What number are you looking for?
+0
+Checking in slot 5
+Checking in slot 2
+Your number was not found.
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ ./a.out
+What number are you looking for?
+6
+Checking in slot 5
+Checking in slot 2
+Checking in slot 3
+Your number was not found.
+]0;elabd004@empress:~/HWPrograms/forHW2[elabd004@empress forHW2]$ exit
+exit
+
+Script done on Mon 22 Feb 2016 08:49:09 PM PST

@@ -1,0 +1,23 @@
+Script started on Tue 15 Mar 2016 01:18:55 PM PDT
+]0;elabd004@empress:~/HWPrograms/forHW3/P2[elabd004@empress P2]$ g++ slit[Kst.cpp llist.cpp HW3P2client.cpp 
+]0;elabd004@empress:~/HWPrograms/forHW3/P2[elabd004@empress P2]$ ./a.out
+1
+2
+3
+[4][6][7][8]
+4
+Found in Position: 2
+5
+6
+Found in Position: 4
+7
+8
+[4][0][7][2]
+9
+Number not found!
+10
+ERROR: Bad position was given
+]0;elabd004@empress:~/HWPrograms/forHW3/P2[elabd004@empress P2]$ exit
+exit
+
+Script done on Tue 15 Mar 2016 01:19:55 PM PDT

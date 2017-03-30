@@ -1,0 +1,15 @@
+Script started on Sat 13 Feb 2016 09:45:57 AM PST
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ exit6723+-*./a.outg++ vstack.cpp client1.cpp
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ g++ vstack.cpp client1.cppexit[K6723+-*./a.out
+Type a postfix expression: 497+*
+The result of the expression is 64
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ ./a.outg++ vstack.cpp client1.cpp./a.out[K
+Type a postfix expression: 83+52++
+The result of the expression is 18
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ ./a.out
+Type a postfix expression: 73619-+  *++-
+The result of the expression is -11
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ exit
+exit
+
+Script done on Sat 13 Feb 2016 09:48:29 AM PST

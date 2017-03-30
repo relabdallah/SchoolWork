@@ -1,0 +1,117 @@
+#Ramzi El-abdallah
+#Lab 8
+#9/30/2013
+
+
+
+.data
+
+str0: .asciiz "===========================================================\n"
+str1: .asciiz "Input a number in decimal form:\t"
+str2: .asciiz "The number "
+str3: .asciiz " in binary is:\t"
+str4: .asciiz "\n"
+
+
+.text
+
+main:
+	addi $t1, $0, 2
+	addi $t4, $0, 32
+
+	li $v0, 4
+	la $a0, str0
+	syscall
+
+	li $v0, 4			#asks user for decimal
+	la $a0, str1
+	syscall
+
+	li $v0, 5			#gets decimal from user
+	syscall
+
+	add $s0, $v0, $0		#takes input decimal and sets it to $s0
+
+	li $v0, 4
+	la $a0, str0
+	syscall
+
+	addi $t0, $s0, 0		#sets $t0 to $s0
+
+	li $v0, 4
+	la $a0, str2
+	syscall
+
+	li $v0, 1
+	add $a0, $s0, $0
+	syscall
+
+	li $v0, 4
+	la $a0, str3
+	syscall
+
+	jal loop1
+
+	sub $t3, $t4, $t2
+
+	jal loop2
+	jal loop3
+
+
+return: jr $ra
+	
+	
+
+loop1:	
+	beq $t0, $0, return
+	
+	div $t0, $t1			#divides decimal by 2
+
+	mfhi $s1
+	mflo $s2
+
+	sub $sp, $sp, 4			#moves up on the stack
+	sw $s1, 0($sp)			#puts remainder on the stack
+	
+	add $t0, $s2, $0
+
+	addi $t2, $t2, 1			#counter
+	
+	j loop1
+
+loop2:	
+	beq $t3, 0, return
+
+	li $v0, 1
+	add $a0, $0, $0
+	syscall
+	
+	sub $t3, $t3, 1
+
+	j loop2
+
+loop3:
+	beq $t2, $0, exit
+	lw $s1, 0($sp)
+	addi $sp, $sp, 4
+
+	li $v0, 1
+	add $a0, $s1, $0
+	syscall
+
+	sub $t2, $t2, 1
+
+	j loop3
+
+
+exit:
+	li $v0, 4
+	la $a0, str4
+	syscall
+
+	li $v0, 4
+	la $a0, str0
+	syscall
+
+	li $v0, 10
+	syscall

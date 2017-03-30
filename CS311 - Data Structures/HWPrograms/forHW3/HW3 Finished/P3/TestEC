@@ -1,0 +1,35 @@
+Script started on Fri 25 Mar 2016 02:44:43 PM PDT
+]0;elabd004@empress:~/HWPrograms/forHW3/P3[elabd004@empress P3]$ g++ slist.cpp llist.cpp hw3ec.cpp 
+]0;elabd004@empress:~/HWPrograms/forHW3/P3[elabd004@empress P3]$ ./a.out
+
+Step: 1 L1 is empty and L2 is empty
+Comparing List 1 with List 2
+Lists are the same.
+
+Step: 2 - L1 is empty and L2 has 2 elements
+Comparing List 1 with List 2
+Lists are not the same.
+
+Step: 3 - L1 has 2 elements and L2 is empty
+Comparing List 1 with List 2
+Lists are not the same.
+
+Step: 4 - L1 has 1,2,3 and L2 has 1,2,3
+Comparing List 1 with List 2
+Lists are the same.
+
+Step: 5 - L1 has 1,2,3 and L2 has 1,2
+Comparing List 1 with List 2
+Lists are not the same.
+
+Step: 6 - L1 has 1,2,3 and L2 has 1,2,3,4
+Comparing List 1 with List 2
+Lists are not the same.
+
+Step: 7 - L1 has 1,2,3 and L2 has 1,2,4
+Comparing List 1 with List 2
+Lists are not the same.
+]0;elabd004@empress:~/HWPrograms/forHW3/P3[elabd004@empress P3]$ exit
+exit
+
+Script done on Fri 25 Mar 2016 02:45:15 PM PDT

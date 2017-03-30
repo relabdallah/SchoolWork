@@ -1,0 +1,12 @@
+Script started on Fri 12 Feb 2016 01:40:05 AM PST
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ g++ stack.cpp client1.co[Kpp
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ ./a.out
+type a postfix expression: 345+*
+The result of the expression is 27
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ ./a.out
+type a postfix expression: 6177++*
+The result of the expression is 90
+]0;elabd004@empress:~/HWPrograms/forHW1[elabd004@empress forHW1]$ exit
+exit
+
+Script done on Fri 12 Feb 2016 01:41:26 AM PST

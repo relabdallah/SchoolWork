@@ -1,0 +1,140 @@
+#Ramzi El-abdallah
+#Lab 11
+
+
+.data
+
+array1: .space 300
+str0: .asciiz "How many numbers would you like to enter: "
+str1: .asciiz "Enter number "
+str2: .asciiz ":\t"
+str3: .asciiz "The median is:\t"
+str4: .asciiz "\n=============================================\n"
+
+
+.text
+
+main:
+	la $s0, array1
+	la $s2, array1
+	li $t0, 0		#count
+	li $t1, 1
+	li $t3, 2
+	li $t7, 4
+	mtc1 $t3, $f2
+	cvt.s.w $f2, $f2
+
+	li $v0, 4
+	la $a0, str0
+	syscall
+
+	li $v0, 5
+	syscall
+
+	add $s1, $v0, $0
+
+	li $v0, 4
+	la $a0, str4
+	syscall
+
+loop1:
+	beq $t0, $s1, done
+	li $v0, 4
+	la $a0, str1
+	syscall
+
+	li $v0, 1
+	addi $a0, $t1, 0
+	syscall
+
+	li $v0, 4
+	la $a0, str2
+	syscall
+
+	li $v0, 5
+	syscall
+
+	add $t2, $v0, $0
+
+	sw $t2, 0($s0)
+
+	addi $t0, $t0, 1
+	addi $t1, $t1, 1
+	add $s0, $s0, 4
+	j loop1
+
+	add $a1, $s2, $0
+
+done: jal findmiddle 	
+	
+	add $s3, $v0, $0
+	
+	li $v0, 1
+	add $a0, $s3, $0
+	syscall
+
+exit:
+	li $v0, 10
+	syscall
+
+
+
+
+
+
+
+findmiddle:
+	add $s2, $a1, $0
+	div $s1, $t3
+	mfhi $t4
+	mflo $t5
+	
+even:
+	bne $t4, $0, odd
+	sub $t5, $t5, 1
+	mult $t5, $t7
+	mflo $t6
+	add $s2, $s2, $t6
+	lw $s3, 0($s2)
+	add $s2, $s2, 4
+	lw $s4, 0($s2)
+	add $s5, $s3, $s4
+	mtc1 $s5, $f1
+	cvt.s.w $f1, $f1
+	div.s $f3, $f1, $f2
+	mov.s $f12, $f3
+
+	li $v0, 4
+	la $a0, str4
+	syscall
+
+	li $v0, 4
+	la $a0, str3
+	syscall
+	
+	li $v0, 2
+	syscall
+
+	j exit
+
+
+odd:
+	mult $t5, $t7
+	mflo $t6
+	add $s2, $s2, $t6
+	lw $s3, 0($s2)
+
+	li $v0, 4
+	la $a0, str4
+	syscall
+
+	li $v0, 4
+	la $a0, str3
+	syscall
+	
+	add $v0, $s3, $0
+
+	jr $ra
+
+
+

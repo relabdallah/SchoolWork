@@ -1,0 +1,73 @@
+Script started on Tue 26 Apr 2016 02:26:58 PM PDT
+]0;elabd004@empress:~/HW6[elabd004@empress HW6]$ exitg++ dgraph.cpp slist.cpp llist.cpp hw6Client.cpp 
+]0;elabd004@empress:~/HW6[elabd004@empress HW6]$ ./a.out
+Loading data from file table.txt
+Select one:
+1. Find Adjacency List of a vertex
+2. Find Out Degree of a vertex
+3. Display the graph as a table
+4. Quit
+Choice: 1
+Enter the vertex you would like to search for:
+b B
+Searching for vertex B
+The adjacency list for that vertex is:
+[67][71]
+Select one:
+1. Find Adjacency List of a vertex
+2. Find Out Degree of a vertex
+3. Display the graph as a table
+4. Quit
+Choice: 2
+Enter the vertex you would like to search for:
+H
+Searching for vertex H
+The out degree for that vertex is:
+2
+Select one:
+1. Find Adjacency List of a vertex
+2. Find Out Degree of a vertex
+3. Display the graph as a table
+4. Quit
+Choice: 3
+Vertex	Degree	AdjacencyList
+A	2	[66][70]
+B	2	[67][71]
+C	1	[72]
+D	0	[empty]
+E	0	[empty]
+F	2	[73][69]
+G	0	[empty]
+H	2	[71][73]
+I	3	[65][71][69]
+Select one:
+1. Find Adjacency List of a vertex
+2. Find Out Degree of a vertex
+3. Display the graph as a table
+4. Quit
+Choice: 1
+Enter the vertex you would like to search for:
+r
+Searching for vertex R
+ERROR: Vertex not found!
+Select one:
+1. Find Adjacency List of a vertex
+2. Find Out Degree of a vertex
+3. Display the graph as a table
+4. Quit
+Choice: 2
+Enter the vertex you would like to search for:
+p
+Searching for vertex P
+The out degree for that vertex is:
+ERROR: Vertex not found!
+Select one:
+1. Find Adjacency List of a vertex
+2. Find Out Degree of a vertex
+3. Display the graph as a table
+4. Quit
+Choice: 4
+]0;elabd004@empress:~/HW6[elabd004@empress HW6]$ exit
+exit
+
+Script done on Tue 26 Apr 2016 02:27:54 PM PDT

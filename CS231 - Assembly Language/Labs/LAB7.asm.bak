@@ -1,0 +1,69 @@
+#Ramzi El-abdallah
+#=====================================================================================
+
+.data
+purchasearray:	.space 150
+couponarray:	.space 150
+str0: .asciiz "Please enter the number of items you are purchasing:\n"
+str1: .asciiz "\nPlease enter the price of item "
+str2: .asciiz "\nPlease enter the number of coupons you want to use:\n"
+str3: .asciiz "\nPlease enter the ammount of coupon "
+str4: .asciiz "\nSorry this coupon is not acceptable."
+str5: .asciiz "\nYour Sub-total is: $"
+str6: .asciiz "\n$"
+str7: .asciiz "\nSorry too many items.\n"
+
+
+.text
+
+main:	li $t0, 15		#item limit
+	li $t1, 1		#item counter
+	li $s2, 0
+	la $t2, purchasearray	
+
+	li $v0, 4		#asks user for item number
+	la $a0, str0
+	syscall
+
+	li $v0, 5		#gets number of items
+	syscall
+	add $s0, $v0, $0
+
+	bgt $s0, $t0, main	#check item amount
+
+loop1:		bgt $t1, $s0, exit
+		
+		li $v0, 4	#asks user for price
+		la $a0, str1
+		syscall
+
+		li $v0, 1
+		add $a0, $t1, $0
+		syscall
+
+		li $v0, 4
+		la $a0, str6
+		syscall
+
+		li $v0, 5
+		syscall
+		add $t3, $v0, $0
+		
+		add $t1, $t1, 1		#incriments item counter
+		
+		sw $t3, 0($t2)		#stores amount in array
+		add $t2, $t2, 4		#incriment array
+		
+		j loop1
+
+		li $v0, 4		#asks for number of coupons
+		la $a0, str2
+		syscall
+
+		li $v0, 5		#Gets and stores number of coupons
+		syscall
+		add $s1, $v0, $0
+		
+
+exit:	li $v0, 10
+	syscall
