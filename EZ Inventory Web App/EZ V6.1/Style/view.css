@@ -1,0 +1,76 @@
+body
+{
+  font-family: arial, verdana, "times new roman";
+  color: white;
+  font-size: 20px;
+  background-color: #000000;
+  background-image: url(../images/pagebackground.jpg);
+  text-align: center;
+}
+
+form
+{
+   background-color: #4958DA;
+}
+h1
+{
+color:white;
+}
+table
+{
+margin: 0 auto;
+    padding: 5px;
+    border: medium solid white;
+}
+
+th
+{
+    padding: 5px;
+    border: medium solid white;
+    background-color: #4958DA;
+}
+
+tr
+{
+    padding: 5px;
+        border: medium solid white;
+}
+
+td
+{
+  color:white;
+    text-align: center;
+        font-weight: 700;
+        padding: 5px;
+        border: medium solid white;
+}
+
+.center
+{
+  color: white;
+  font-size:24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  width: 20%;
+}
+
+#searchBox
+{
+  width: 230px;
+  height: 35px;
+  font-size: 18px;
+  padding: 5px;
+  padding-right: 20px;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+#submit
+{
+  width: 250px;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px;
+  padding-right: 20px;
+  border-radius: 20px;
+}

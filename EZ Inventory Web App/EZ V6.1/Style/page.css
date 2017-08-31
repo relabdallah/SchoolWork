@@ -1,0 +1,104 @@
+body
+{
+   background-color: black;
+   background-image: url(../images/pagebackground.jpg);
+   background-size: cover;
+}
+
+form
+{
+  font-family: arial, verdana, "times new roman";
+  color: white;
+  font-size: 20px;
+   background-color: #FF9300;
+   opacity: 0.70;
+   filter: alpha(opacity=70);
+
+}
+nav
+{
+	margin: auto;
+	width: 800px;
+}
+
+header
+{
+	text-align: center;
+}
+ul
+{
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+}
+
+li
+{
+    float: left;
+    width: 200px;
+}
+
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 25px;
+
+
+}
+
+
+li a:hover {
+    background-color: orange;
+}
+
+main
+{
+
+	margin: 10px auto;;
+	width: 800px;
+	background-color: grey;
+
+}
+label
+{
+	width: 133px;
+	display: inline-table;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+	height: 10px;
+	border: 3px solid black;
+
+}
+
+legend
+{
+	color: #272E72;
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+button
+{
+	float: right;
+}
+#submit
+{
+  width: 250px;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: grey;
+}
+#submit:hover{
+    background-color: orange;
+}

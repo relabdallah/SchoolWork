@@ -1,0 +1,9 @@
+CREATE TABLE login
+(
+username VARCHAR(10),
+password VARCHAR(10,
+CONSTRAINT loginPK PRIMARY KEY (username)
+);
+
+INSERT INTO login VALUES (manager1, 11111);
+INSERT INTO login VALUES (cashier1, aaaaa);

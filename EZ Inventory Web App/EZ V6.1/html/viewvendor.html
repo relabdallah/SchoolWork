@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--made by Roger Delgado  -->
+<html lang = "en">
+  <head>
+    <title>Vendor Search</title>
+    <meta charset = "utf-8" />
+    <link rel="stylesheet" href="../Style/page.css">
+  </head>
+  <body>
+    <div class = "wrapper">
+      <header>
+	<a href="home.html"><img src="../images/ez_inventory_80.png"/></a>
+      </header>
+
+      <nav>
+	<ul>
+	  <li><a href="employee.html">Employees</a></li>
+	  <li><a href="item.html">Item</a></li>
+	  <li><a href="transaction.html">Transactions</a></li>
+	  <li><a href="vendor.html">Vendor</a></li>
+
+	</ul>
+      </nav>
+
+      <nav>
+	<ul>
+	  <li><a href="viewvendor.html">View Vendor</a></li>
+	  <li><a href="deletevendor.html">Delete Vendor</a></li>
+	  <li><a href="viewallv.php">View All Vendor</a></li>
+	</ul>
+      </nav>
+
+      <div id="innerWrap"><!--inner wrap start-->
+	<main>
+	  <!-- Search Team ID section  -->
+	  <form id = "ID" action = "viewvendor.php" method = "post">
+	    <fieldset><legend>Vendor Search:</legend>
+
+	      <label>Vendor ID:</label>
+	      <input type="text" id="searchBox" name = "VendorID" placeholder = "Enter vendor ID: EX: '1'" required>
+	      <br /><br />
+
+	      <!-- submit button location -->
+	      <INPUT type="submit" id="submit" value="Submit"/>
+	    </fieldset>
+	  </form>
+	</main>
+      </div>
+    </div>
+  </body>
+</html>
