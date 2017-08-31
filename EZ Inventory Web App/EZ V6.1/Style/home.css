@@ -1,0 +1,59 @@
+
+form
+{
+   background-color: #4958DA;
+}
+
+body {
+    font-family: chalkduster, sans-serif, "times new roman";
+    color: #D68910;
+    background-color: #ffffff;
+    background-image: url(../images/pagebackground.jpg);
+    text-align: center;
+
+
+
+}
+#navigation
+{
+	display: table;
+	margin:auto;
+	width: 300px;
+
+
+}
+
+.row
+{
+	display: table-row;
+
+}
+.cell
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+	margin:center;
+
+}
+ a
+{
+	text-decoration: none;
+	color: #ffffff;
+  font-size: 20px;
+
+}
+
+a:hover
+{
+	color: #FF9300;
+}
+#submit
+{
+  width: 250px;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px;
+  padding-right: 20px;
+  border-radius: 20px;
+}

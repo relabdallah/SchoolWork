@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../Style/page.css">
+    <link rel="shortcut icon" href="../homelogo.png">
+
+    <title>Items</title>
+  </head>
+
+  <body>
+
+    <div id="wrapper"> <!--outer container-->
+
+      <header>
+	<a href="home.html"><img src="../images/ez_inventory_80.png"/></a>
+      </header>
+
+
+      <nav>
+	<ul>
+	  <li><a href="employee.html">Employees</a></li>
+	  <li><a href="item.html">Item</a></li>
+	  <li><a href="transaction.html">Transactions</a></li>
+	  <li><a href="vendor.html">Vendor</a></li>
+	</ul>
+      </nav>
+
+      <nav>
+	<ul>
+	  <div align="center">
+	    <li><a href="viewitem.html">View Item</a></li>
+	    <li><a href="deleteitem.html">Delete Item</a></li>
+	    <li><a href="viewalli.php">View All Items</a></li>
+	  </div>
+	</ul>
+      </nav>
+
+      <div id="innerWrap"><!--inner wrap start-->
+	<main>
+
+	  <form action = "additem.php" method = "post">
+	    <fieldset><legend>Add New Item</legend>
+	      <label for="name">Name: </label>
+	      <input type="text" name="ProductName" id="name" size="15" maxlength="15" placeholder="Enter Name" required> <br>
+	      <br>
+	      <label for="size">Size:</label>
+	      <input type="text" name="Size" id="size" size="15" maxlength="15" placeholder="S,M,or L" required> <br>
+	      <br>
+	      <label for="ptype">Type:</label>
+	      <input type="text" name="ProductType" id="ptype" size="15" maxlength="15" placeholder="Enter product type" required> <br>
+	      <br>
+	      <label for= "quantity">Quantity:</label>
+	      <input type="text" name="Quantity" id="quantity" size="15" maxlength= "20" placeholder="XXX" required> <br>
+	      <br>
+	      <label for= "price">Price:</label>
+	      <input type="text" name="Price" id="price" size="15" maxlength= "20" placeholder="XXXXXXX.xx" required> <br>
+	      <br>
+	      <label for="cost">Cost:</label>
+	      <input type="text" name="Cost" id="cost" size="15" maxlength="20" placeholder="XXXXX.xx" required> <br>
+	      <br>
+	      <label for="manufacturer">Manufacturer:</label>
+	      <input type="text" name="Manufacturer" id="manufacturer" size="15" maxlength="20" placeholder="Enter Manufacturer" required> <br>
+	      <br>
+	      <label for="description">Description:</label>
+	      <input type="text" name="Description" id="description" size="15" maxlength="20" placeholder="Enter Description" required> <br>
+	      <br>
+	      <label for="category">Category:</label>
+	      <input type="text" name="Category" id="category" size="15" maxlength="20" placeholder="Enter Category" required> <br>
+	      <br>
+	      <label for="vendorID">Vendor ID:</label>
+	      <input type="text" name="VendorID" id="vendorID" size="15" maxlength="20" placeholder="XXX" required> <br><br>
+	      <INPUT type="submit" id="submit" value="Submit"/>
+	    </fieldset>
+
+	  </form>
+	</main>
+      </div> <!-- inner wrap end-->
+    </div> <!--end of outer container-->
+  </body>
+</html>

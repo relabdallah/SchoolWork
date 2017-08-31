@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../Style/page.css">
+    <link rel="shortcut icon" href="../homelogo.png">
+
+    <title>Transactions</title>
+  </head>
+
+  <body>
+
+    <div id="wrapper"> <!--outer container-->
+
+      <header>
+	<a href="home.html"><img src="../images/ez_inventory_80.png"/></a>
+      </header>
+
+      <nav>
+	<ul>
+	  <li><a href="employee.html">Employees</a></li>
+	  <li><a href="item.html">Item</a></li>
+	  <li><a href="transaction.html">Transactions</a></li>
+	  <li><a href="vendor.html">Vendor</a></li>
+	</ul>
+      </nav>
+
+      <nav>
+	<ul>
+	  <li><a href="viewtransaction.html">View Transaction</a></li>
+	  <li><a href="deletetransactions.html">Delete Transaction</a></li>
+	  <li><a href="viewallt.php">View All Transaction</a></li>
+
+	</ul>
+      </nav>
+      <div id="innerWrap"><!--inner wrap start-->
+	<main>
+
+
+	  <form action = "addtransaction.php" method = "post">
+	    <fieldset><legend>Add New Transaction</legend>
+	      <label for="description">Description:</label>
+	      <input type="text" name="Description" id="Description" size="15" maxlength="20" placeholder="Enter Description" required> <br>
+	      <br>
+	      <label for="tdate">Date:</label>
+	      <input type="text" name="Date" id="Date" size="15" maxlength="20" placeholder="YYYY-MM-DD" required> <br>
+	      <br>
+	      <label for="Emp_ID">Emp_ID:</label>
+	      <input type="text" name="EmpID" id="EmpID" size="15" maxlength="20" placeholder="XXX" required> <br>
+	      <br>
+	      <label for="Vendor_ID">Vendor_ID:</label>
+	      <input type="text" name="VendorID" id="VendorID" size="15" maxlength="20" placeholder="XXX" required> <br>
+	      <br>
+	      <label for="tproductName">Product Name:</label>
+	      <input type="text" name="ProductName" id="ProductName" size="15" maxlength="20" placeholder="Product Name" required> <br>
+	      <br>
+	      <label for="tquantity">Quantity:</label>
+	      <input type="text" name="Quantity" id="Quantity" size="15" maxlength="20" placeholder="XXX" required> <br>
+	      <br>
+	      <label for="tsaleAmount">Sale Amount:</label>
+	      <input type="text" name="SaleAmt" id="SaleAmt" size="15" maxlength="20" placeholder="XX.xx" required> <br>
+	      <br>
+
+	      <INPUT type="submit" id="submit" value="Submit"/>
+
+	    </fieldset>
+	    <br>
+	  </form>
+	</main>
+
+      </div> <!-- inner wrap end-->
+    </div> <!--end of outer container-->
+  </body>
+</html>

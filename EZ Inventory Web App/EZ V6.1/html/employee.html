@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../Style/page.css">
+    <link rel="shortcut icon" href="../homelogo.png">
+
+    <title>Employees</title>
+  </head>
+
+  <body>
+
+    <div id="wrapper"> <!--outer container-->
+
+      <header>
+	<a href="home.html"><img src="../images/ez_inventory_80.png"/></a>
+      </header>
+      <nav>
+	<ul>
+	  <li><a href="employee.html">Employees</a></li>
+	  <li><a href="item.html">Item</a></li>
+	  <li><a href="transaction.html">Transactions</a></li>
+	  <li><a href="vendor.html">Vendor</a></li>
+	</ul>
+      </nav>
+
+      <nav>
+	<ul>
+	  <li><a href="viewemployee.html">View Employee</a></li>
+	  <li><a href="deleteemployee.html">Delete Employee</a></li>
+	  <li><a href="viewalle.php">View All Employee</a></li>
+	</ul>
+      </nav>
+
+      <div id="innerWrap"><!--inner wrap start-->
+	<main>
+
+
+	  <form action = "addemployee.php" method = "post">
+	    <fieldset><legend>Add New Employee</legend>
+	      <label for="First Name">First: </label>
+	      <input type="text" name="FName" id="Fname" size="15" maxlength="20" placeholder="Enter First Name" required> <br>
+	      <br>
+	      <label for="Last Name">Last: </label>
+	      <input type="text" name="LName" id="Fname" size="15" maxlength="20" placeholder="Enter Last Name" required> <br>
+	      <br>
+	      <label for="password">Password: </label>
+	      <input type="text" name="Password" id="Password" size="15" maxlength="20" placeholder="Letters/Nums" required> <br>
+	      <br>
+	      <label for="Role">Role:</label>
+	      <input type="text" name="Role" id="Role" size="15" maxlength="20" placeholder="Enter Role" required> <br>
+	      <br>
+	      <label for="Store Num">Store Num:</label>
+	      <input type="text" name="StoreNum" id="StoreNum" size="15" maxlength="20" placeholder="XXX" required> <br>
+	      <br>
+
+	      <INPUT type="submit" id="submit" value="Submit"/>
+
+	    </fieldset>
+	    <br>
+
+
+
+	  </form>
+
+	</main>
+
+      </div> <!-- inner wrap end-->
+    </div> <!--end of outer container-->
+  </body>
+
+</html>
